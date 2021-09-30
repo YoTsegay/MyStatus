@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <p>
+            <input type = "text" value=""/>
+            <button onclick ="sumit()">Submit</button>
+        </p>
+
+        Name
+        <input name = "inputElement" type="" value = "" />
+        ID
+        <input type = "text" value = "" />
+        Type
+        <ipute type = "text" value = "" />
+        <ipute type = "radio" value = "" />
+
+        <button onclick="submit()">Submit</button>
+        <div>
+            <p> Inside div
+                <p> This P
+                   <p> Innermost P</p>
+                </p>
+            </p>
+        </div>
+    </p>
+        <script>
+            function submit(){
+                //creat oreder list
+                let ol = document.createElement("ol");
+                document.body.append(ol);
+                let element = document.querySelectorAll("#test");
+                alert(element.length,element[0].type)
+                // let element = document.querySelector("div > p"); // if we put > we are saying go to p and gget me div
+                // for(let mydiv of element){
+                //     alert(myDiv.innerHTML)
+                // }
+                // alert(element.length,element[0].innerHtml);
+
+                
+            }
+        </script>
+    </body>
+</html>

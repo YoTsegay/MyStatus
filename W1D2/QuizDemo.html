@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Return first and last name</title>
+  </head>
+  <body>
+    <hi>My Form</hi>
+    <p>All field are requird</p>
+    <label>First name: </label>
+    
+    <input type="text" name="fname" value="Rama" ><br>
+    Last name:<input type="text" name="lname" value="Krishna" /><br />
+    <input type="submit" value="submit" onclick="submit()" />
+
+    <div>
+      <table id="sampleTable">
+        <tr>
+          <td>Row1 cell1</td>
+          <td>Row1 cell2</td>
+        </tr>
+        <tr>
+          <td>Row2 cell1</td>
+          <td>Row2 cell2</td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      function submit() {
+        let x = document.getElementById("sampleTable");
+        let tr = document.getElementByTagName("tr")[1];
+        //tr.style.color = pink;
+        // if we want backGround color we just change the color to backGround
+        document.querySelectorAll("table tr")[1].style.backgroundColor 
+
+        //1 Appear first and lastname
+        let first = document.getElementsByName("fname")[0];
+        let lastName = document.getElementsByName("lname")[0];
+        alert(firstName.value + " " + lastName.value);
+
+        //2 change the firstName to pink color
+        // let labelTag = document.getElementsByTagName("label");
+        // labelTag[0].style.color = "pink";
+        // console.log()
+
+        // //3 set the background-colour to red for h1 and p tafs
+        // let handP = document.querySelectorAll("h1,p");
+        // for(let eachElement of handP){
+        //     eachElement.style.backgroundColor = "red";
+        // }
+
+        //4
+        let p = document.getElementsByName("p")[0];
+
+        //5
+        //p.innerText = "All fields are optional"
+        //p.innerText = p.innerText + "Do the following exercise"
+        //p.append("Do the following exercise");
+
+        //6, Romove p element.
+        //p.innerHTML ="";
+        document.body.append(p);
+        //p.remove();
+        //document.body.removeChild(p);
+
+        //7 Add the following Image after lastname
+
+        let imageEl = document.createElement("img");
+        imageEl.src = "";
+        imageEl.setAttribute("width", "240px");
+        imageEl.setAttribute("height", "160px");
+
+        //this how we add in the code
+        document.body.append(imageEl);
+
+        //8, a. Write JaveScript code to make the second row pink
+        //b. write css rule for the same.
+      }
+    </script>
+  </body>
+</html>
